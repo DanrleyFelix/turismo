@@ -1,0 +1,1 @@
+This project is a desktop web page showcasing information about a tourist destination. It is one of the practical challenges from Rocketseat's Fullstack training program, part of their specialization content.
