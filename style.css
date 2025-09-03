@@ -1,0 +1,160 @@
+:root{
+    --background-default: #F5F4F0;
+    --border-primary: #D9D9D9;
+
+    --text-primary: #1B1B1B;
+    --text-secondary: #333333;
+    --text-tertiary: #696969;
+    --text-headline: #E1624F;
+
+    --accent-blue: #0C51A7;
+    --accent-orange: #E95E10;
+    --accent-pink: #E5245E;
+    --accent-purple: #591B98;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans";
+    margin: 60px;
+    background-color: var(--background-default);
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 44px;
+}
+
+header .headline{
+    margin-bottom: 10px;
+}
+
+.headline{
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--text-headline);
+    text-transform: uppercase;
+}
+
+h2, h3, section .headline{
+    margin-bottom: 15px;
+}
+
+h3{
+    margin-left: 15px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--text-secondary);
+}
+
+main img{
+    display: block;
+    border-radius: 28px;  
+    width: 100%;
+}
+
+.image-list{
+    display: block;
+    height: 375px;
+    margin-top: 44px;
+    margin-bottom: 28px;
+    object-fit: cover;
+}
+
+#description img{
+    display: block;
+    height: 660px;
+    object-fit: cover;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+  background-color: var(--border-primary);
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 22px;
+  font-style: italic; /* Muda estilo da fonte para itálico */
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: 24px;
+}
+
+p+p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.custom-list {
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+.custom-list ol li {
+    counter-increment: list-counter;
+}
+
+.text-list h3 {
+    counter-increment: list-counter;
+}
+
+.text-list h3::before {
+    content: counter(list-counter) ". ";
+}
+
+ul li{
+    margin-left: 30px;
+    margin-bottom: 3px;
+    list-style-type: disc;
+    font-weight: bold;
+}
+
+ul li::marker {
+  color: var(--text-secondary);
+}
+
+#l1,
+#l2 {
+  color: var(--accent-blue);
+}
+
+#l3{
+    color: var(--accent-purple);
+}
+
+#l4{
+    color: var(--accent-pink);
+}
+
+#l5{
+    color: var(--accent-orange);
+}
+
+.label {
+    font-weight: bold;
+}
+
+#final-text{
+    margin-top: 45px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 75px;
+    text-align: center;
+}
